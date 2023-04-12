@@ -14,27 +14,27 @@ public class Main {
         System.out.println();
         System.out.println("Задание 1");
         int total = 0;
-        int i = 0;
+        int month = 0;
         int money = 15000;
         while (total < 2_459_000) {
             total = total + money;
-            i++;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+            month++;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
         }
-        System.out.println("Чтобы накопить необходимую сумму потребуется " + i + " месяц(ев).");
+        System.out.println("Чтобы накопить необходимую сумму потребуется " + month + " месяц(ев).");
     }
 
     public static void task2() {
         System.out.println();
         System.out.println("Задание 2");
-        int t = 0;
-        while (t < 10) {
-            t++;
-            System.out.print("" + t);
+        int i = 0;
+        while (i < 10) {
+            i++;
+            System.out.print("" + i);
         }
         System.out.println();
-        for (; t > 0; t--) {
-            System.out.print("" + t);
+        for (; i > 0; i--) {
+            System.out.print("" + i);
         }
     }
 
@@ -44,12 +44,12 @@ public class Main {
         System.out.println("Задание 3");
         double Y = 12_000_000;
         double annualPopulationGrowth = Y / 1000 * (12 - 7);
-        int i = 0;
-        while (i < 10) {
+        int year = 0;
+        while (year < 10) {
             Y = Y + annualPopulationGrowth;
             annualPopulationGrowth = Y / 1000 * (12 - 7);
-            i++;
-            System.out.println("Год " + i + ", численность населения составляет " + Y);
+            year++;
+            System.out.println("Год " + year + ", численность населения составляет " + Y);
         }
     }
 
@@ -58,11 +58,11 @@ public class Main {
         System.out.println();
         System.out.println("Задание 4");
         double contribution = 15000;
-        int i = 0;
+        int month = 0;
         while (contribution < 12_000_000) {
             contribution = contribution * 1.07;
-            i++;
-            System.out.println("Месяц " + i + " сумма накоплений: " + contribution);
+            month++;
+            System.out.println("Месяц " + month + " сумма накоплений: " + contribution);
         }
     }
 
@@ -70,12 +70,12 @@ public class Main {
         System.out.println();
         System.out.println("Задание 5");
         double contribution = 15000;
-        int i = 0;
+        int month = 0;
         while (contribution < 12_000_000) {
             contribution = contribution * 1.07;
-            i++;
-            if (i % 6 == 0) {
-                System.out.println("Месяц " + i + " сумма накоплений: " + contribution);
+            month++;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + " сумма накоплений: " + contribution);
             }
         }
     }
@@ -84,14 +84,14 @@ public class Main {
         System.out.println();
         System.out.println("Задание 6");
         double contribution = 15000;
-        int i = 0;
-        int j = 0;
-        while (i < 9 * 12) {
+        int month = 0;
+        int halfYear = 0;
+        while (month< 9 * 12) {
             contribution = contribution * 1.07;
-            i++;
-            if (i % 6 == 0) {
-                j++;
-                System.out.println("Полугодие " + j + " сумма накоплений: " + contribution);
+            month++;
+            if (month % 6 == 0) {
+                halfYear++;
+                System.out.println("Полугодие " + halfYear + " сумма накоплений: " + contribution);
             }
         }
     }
@@ -119,7 +119,7 @@ public class Main {
         System.out.println();
         System.out.println("Задание 8");
         for (int year = 0; year<2100; year=year+79){
-            if (year>=2023-200&&year<=2023+100){
+            if (year>=2023-200){
                 System.out.println(year);
             }
         }
