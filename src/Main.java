@@ -42,14 +42,14 @@ public class Main {
         System.out.println();
         System.out.println();
         System.out.println("Задание 3");
-        double Y = 12_000_000;
-        double annualPopulationGrowth = Y / 1000 * (12 - 7);
+        double population = 12_000_000;
+        double annualPopulationGrowth = population / 1000 * (12 - 7);
         int year = 0;
         while (year < 10) {
-            Y = Y + annualPopulationGrowth;
-            annualPopulationGrowth = Y / 1000 * (12 - 7);
+            population = population + annualPopulationGrowth;
+            annualPopulationGrowth = population / 1000 * (12 - 7);
             year++;
-            System.out.println("Год " + year + ", численность населения составляет " + Y);
+            System.out.println("Год " + year + ", численность населения составляет " + population);
         }
     }
 
